@@ -1,0 +1,4 @@
+rgba(75, 80, 83, 255); /* Dark grey background */ 
+  color: #000; /* Black text */
+
+  rgba(236,236,236,255); /* Light grey content background */
