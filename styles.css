@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Faculty Glyphic", sans-serif;
+  background-color: rgba(75, 80, 83, 255); /* Dark grey background */
+  color: #000; /* Black text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  background-color: rgba(
+    236,
+    236,
+    236,
+    255
+  ); /* Light grey content background */
+  width: 80%;
+  max-width: 1200px;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 30px 5px rgba(0, 0, 0, 0.5); /* Darker, more expansive shadow */
+  margin: 5%;
+}
+
+/* Header and Navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50vh;
+  margin-top: 0rem;
+}
+
+.logo {
+  font-weight: semibold;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #555; /* Slight hover effect */
+}
+
+.theme-toggle {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Main Title */
+.main-title {
+  font-size: 5rem;
+  font-weight: semibold;
+  margin-bottom: 0.5rem;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1rem;
+  color: rgba(75, 80, 83, 255); /* Dark grey background */ 
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-weight: semibold;
+}
+
+/* Styling the container */
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and image */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 1rem;
+}
+
+.theme-toggle {
+  font-weight: semibold;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  background-color: #000;
+  color: rgba(236,236,236,255); /* Light grey content background */
+  text-align: center;
+  margin-bottom: 0px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.footer-top {
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.footer-description {
+  font-size: 1rem;
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-social {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background-color:  rgba(236,236,236,255); /* Light grey content background */
+  color: #000;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: rgba(75, 80, 83, 255); /* Dark grey background */ 
+  font-family: "Poppins", sans-serif;
+}
+
+/* ABOUT */
+
+h1{
+  font-weight: semibold;
+  margin-bottom: 5%;
+}
+
+.leftSection{
+  display: inline-block; /* Allows them to appear side by side */
+  background-color: rgba(75, 80, 83, 255);
+  width: 46%;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 14% 0%;
+  float: left;
+}
+
+.rightSection{
+  display: inline-block; /* Allows them to appear side by side */
+  background-color: rgba(75, 80, 83, 255);
+  width: 46%;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 14% 0%;
+  float: right;
+
+}
+
+/* WORK  */
