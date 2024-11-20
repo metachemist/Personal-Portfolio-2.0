@@ -28,9 +28,14 @@ body {
   max-width: 1200px;
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 8px 30px 5px rgba(0, 0, 0, 0.5); /* Darker, more expansive shadow */
+  box-shadow: 0px 3px 30px 5px rgba(0, 0, 0, 0.5); /* Darker, more expansive shadow */
   margin: 5%;
-  margin-bottom: 4%;
+  position: absolute;
+  bottom: 10px;
+  top: 1px;
+  flex-shrink: 0px;
+  flex-grow: 0px;
+
 }
 
 /* Header and Navigation */
@@ -78,9 +83,10 @@ body {
 .subtitle {
   font-size: 1rem;
   color: rgba(75, 80, 83, 255); /* Dark grey background */
-  line-height: 1.5;
+  line-height: 1;
   font-family: "Poppins", sans-serif;
   font-weight: semibold;
+
 }
 
 /* Styling the container */
@@ -105,7 +111,7 @@ body {
   text-align: center;
   margin-bottom: 0px;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 45rem;
 }
 
 .footer-top {
@@ -159,12 +165,33 @@ body {
 }
 
 /* ABOUT */
+.leftSection {
+  display: inline-block; /* Allows them to appear side by side */
+  width: 52%;
+  margin: 6% 0%;
+  float: left;
+  position: relative; /* Use relative positioning */
+  top: 235px; /* Move it downward */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to the bottom */
+  align-items: flex-start; /* Align content to the left */
+}
+
+.rightSection {
+  display: inline-block; /* Allows them to appear side by side */
+  width: 45%;
+  float: right;
+  position: relative;
+  bottom: 55px;
+  padding-bottom: 0px;
+}
 
 .skills {
   font-weight: bold;
-  margin: 5%;
   text-align: center;
   margin: 0px 1px 1px 1px;
+
 }
 
 .aboutme {
@@ -185,45 +212,33 @@ body {
   font-weight: semibold;
 }
 
-.leftSection {
-  display: inline-block; /* Allows them to appear side by side */
-  width: 55%;
-  padding: 0;
-  margin: 6% 0%;
-  float: left;
-  position: relative; /* Use relative positioning */
-  top: 245px; /* Move it downward */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* Push content to the bottom */
-  align-items: flex-start; /* Align content to the left */
-  height: 100%;
-}
-
-.rightSection {
-  display: inline-block; /* Allows them to appear side by side */
-  width: 45%;
-  padding: 1rem 2rem 1rem 2rem;
- 
-  margin: 0px 0px 4px 0px;
-  float: right;
-}
-
 .icons {
-  margin-top: 10px;
-  margin-botton: 0px;
-  border-spacing: 15px;
-  text-align: center /* Space between cells */
-}
-
-.icons td {
-  
-  padding: 0px 20px; /* Space inside each cell */
-  /* margin-bottom: 0px ; */
+  border-spacing: 8px;
+  padding: 0px 32px;
+  text-align: center;
 }
 
 .iconsImg {
-  margin: 2px; /* Space around the images */
+  margin: 11px 25px; /* Space around the images */
 }
+
+.back-to-home {
+  display: inline-block;
+  margin-bottom: 20px; /* Add spacing below the button */
+  color: black; /* Text color */
+  padding: 8px 12px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 14px; /* Font size */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  position: relative;
+  right: 33rem;
+}
+
+.back-to-home:hover {
+  background-color: rgba(75, 80, 83, 255);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Intense shadow on hover */
+}
+
 
 /* WORK  */
