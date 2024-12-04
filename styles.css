@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50vh;
+  margin-bottom: 48vh;
   margin-top: 0rem;
 }
 
@@ -83,10 +83,9 @@ body {
 .subtitle {
   font-size: 1rem;
   color: rgba(75, 80, 83, 255); /* Dark grey background */
-  line-height: 1;
+  line-height: 1.3;
   font-family: "Poppins", sans-serif;
   font-weight: semibold;
-
 }
 
 /* Styling the container */
@@ -240,5 +239,150 @@ body {
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Intense shadow on hover */
 }
 
+.curvedArrow{
+  position: absolute;
+  right: 400px;
+  top: 0px;
+  width: 70px;
+  transform: scaleX(-1) rotate(355deg);
+}
+
+.textbox{
+  position: absolute;
+  left: 160px;
+  top: 80px;
+  padding: 0px 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: semibold;
+  font-size: 1rem;
+  color: rgba(75, 80, 83, 255);
+}
+
 
 /* WORK  */
+
+
+/* CONTACT */
+.leftSectioncontact {
+  display: inline-block; /* Allows them to appear side by side */
+  width: 40%;
+  margin: 6% 0%;
+  float: left;
+  position: relative; /* Use relative positioning */
+  top: 235px; /* Move it downward */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to the bottom */
+  align-items: flex-start;
+}
+
+.rightSectioncontact {
+  display: inline-block; /* Allows them to appear side by side */
+  width: 50%;
+  float: right;
+  position: relative;
+  bottom: 55px;
+  padding-bottom: 0px;
+  /* background-color: blue; */
+}
+
+
+.back-to-homecontact {
+  display: inline-block;
+  margin-bottom: 20px; /* Add spacing below the button */
+  color: black; /* Text color */
+  padding: 8px 12px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 14px; /* Font size */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  position: relative;
+  right: 25.5rem;
+}
+
+.back-to-homecontact:hover {
+  background-color: rgba(75, 80, 83, 255);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Intense shadow on hover */
+}
+
+.form-container {
+  background: #fff ;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 503px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  border-color: #007BFF;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Checkbox Group Styles */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkbox-button {
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background:  rgba(236,236,236,255);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkbox-button:hover {
+  background: rgba(75, 80, 83, 255);
+  color: #fff;
+  border-color: rgba(75, 80, 83, 255);
+}
+
+.checkbox-button.active {
+  background: #007BFF;
+  color: #fff;
+}
+
+/* Submit Button */
+.submit-button {
+  background: rgba(75, 80, 83, 255);
+  color: rgba(236,236,236,255); ;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background: rgba(75, 80, 83, 255);
+}
